@@ -17,7 +17,6 @@ public class AvgWpmByUserDriver {
         Job job = Job.getInstance(conf, "Average WPM by User");
 
         job.setJarByClass(AvgWpmByUserDriver.class);
-
         job.setMapperClass(AvgWpmByUserMapper.class);
         job.setReducerClass(AvgWpmByUserReducer.class);
         job.setCombinerClass(AvgWpmByUserReducer.class); 

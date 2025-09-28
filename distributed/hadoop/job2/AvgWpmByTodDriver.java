@@ -17,7 +17,6 @@ public class AvgWpmByTodDriver {
         Job job = Job.getInstance(conf, "Average WPM by Time-of-Day");
 
         job.setJarByClass(AvgWpmByTodDriver.class);
-
         job.setMapperClass(AvgWpmByTodMapper.class);
         job.setReducerClass(AvgWpmByTodReducer.class);
         job.setCombinerClass(AvgWpmByTodReducer.class);
